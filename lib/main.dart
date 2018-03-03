@@ -84,6 +84,8 @@ class LoginPageState extends State<LoginPage>
                           padding: const EdgeInsets.only(top: 40.0),
                         ),
                         new MaterialButton(
+                          height: 40.0,
+                          minWidth: 100.0,
                           color: Colors.teal,
                           textColor: Colors.white,
                           child: new Text("Login"),
