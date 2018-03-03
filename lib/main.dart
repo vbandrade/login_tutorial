@@ -63,22 +63,25 @@ class LoginPageState extends State<LoginPage>
                       inputDecorationTheme: new InputDecorationTheme(
                           labelStyle: new TextStyle(
                               color: Colors.teal, fontSize: 24.0))),
-                  child: new Column(
-                    children: <Widget>[
-                      new TextFormField(
-                        decoration: new InputDecoration(
-                          hintText: "Enter Email",
+                  child: new Padding(
+                    padding: const EdgeInsets.all(40.0),
+                    child: new Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        new TextFormField(
+                          decoration: new InputDecoration(
+                              hintText: "email@email.com", labelText: "email"),
+                          keyboardType: TextInputType.emailAddress,
                         ),
-                        keyboardType: TextInputType.emailAddress,
-                      ),
-                      new TextFormField(
-                        decoration: new InputDecoration(
-                          hintText: "Enter Password",
+                        new TextFormField(
+                          decoration: new InputDecoration(
+                              hintText: "8 chars, 1 number, 1 special char",
+                              labelText: "password"),
+                          keyboardType: TextInputType.text,
+                          obscureText: true,
                         ),
-                        keyboardType: TextInputType.text,
-                        obscureText: true,
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               )
