@@ -80,6 +80,16 @@ class LoginPageState extends State<LoginPage>
                           keyboardType: TextInputType.text,
                           obscureText: true,
                         ),
+                        new Padding(
+                          padding: const EdgeInsets.only(top: 40.0),
+                        ),
+                        new MaterialButton(
+                          color: Colors.teal,
+                          textColor: Colors.white,
+                          child: new Text("Login"),
+                          splashColor: Colors.redAccent,
+                          onPressed: () => print("login press"),
+                        )
                       ],
                     ),
                   ),
