@@ -1,8 +1,3 @@
 # login_tutorial
 
-A new Flutter project.
-
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+codigo desse tutorial: https://www.youtube.com/watch?v=iYH2jzUM1Nc
