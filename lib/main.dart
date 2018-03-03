@@ -31,6 +31,8 @@ class LoginPageState extends State<LoginPage> {
           new Image(
             image: new AssetImage("assets/girl.jpeg"),
             fit: BoxFit.cover,
+            color: Colors.black87,
+            colorBlendMode: BlendMode.darken,
           ),
         ],
       ),
