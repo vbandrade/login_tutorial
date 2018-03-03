@@ -88,7 +88,8 @@ class LoginPageState extends State<LoginPage>
                           minWidth: 100.0,
                           color: Colors.teal,
                           textColor: Colors.white,
-                          child: new Text("Login"),
+                          child: new Icon(Icons.arrow_right),
+                          // child: new Text("Login"),
                           splashColor: Colors.redAccent,
                           onPressed: () => print("login press"),
                         )
