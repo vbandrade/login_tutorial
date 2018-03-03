@@ -34,6 +34,14 @@ class LoginPageState extends State<LoginPage> {
             color: Colors.black87,
             colorBlendMode: BlendMode.darken,
           ),
+          new Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              new FlutterLogo(
+                size: 100.0,
+              )
+            ],
+          )
         ],
       ),
     );
