@@ -55,6 +55,33 @@ class LoginPageState extends State<LoginPage>
               new FlutterLogo(
                 size: _iconAnimation.value * 100,
               ),
+              new Form(
+                child: new Theme(
+                  data: new ThemeData(
+                      brightness: Brightness.dark,
+                      primarySwatch: Colors.teal,
+                      inputDecorationTheme: new InputDecorationTheme(
+                          labelStyle: new TextStyle(
+                              color: Colors.teal, fontSize: 24.0))),
+                  child: new Column(
+                    children: <Widget>[
+                      new TextFormField(
+                        decoration: new InputDecoration(
+                          hintText: "Enter Email",
+                        ),
+                        keyboardType: TextInputType.emailAddress,
+                      ),
+                      new TextFormField(
+                        decoration: new InputDecoration(
+                          hintText: "Enter Password",
+                        ),
+                        keyboardType: TextInputType.text,
+                        obscureText: true,
+                      ),
+                    ],
+                  ),
+                ),
+              )
             ],
           )
         ],
