@@ -4,7 +4,6 @@ class ClickCounter extends StatefulWidget {
   final String title = "Clicker";
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return new ClickCounterState();
   }
 }

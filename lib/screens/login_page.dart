@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import "home_page.dart";
 
 class LoginPage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return new LoginPageState();
   }
 }
