@@ -1,14 +1,7 @@
 import 'package:flutter/material.dart';
+import "home_page.dart";
 
 class LoginPage extends StatefulWidget {
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    return new MaterialApp(
-        home: new LoginPage(),
-        theme: new ThemeData(primarySwatch: Colors.amber));
-  }
-
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
@@ -30,6 +23,10 @@ class LoginPageState extends State<LoginPage>
         parent: _iconAnimationController, curve: Curves.fastOutSlowIn);
     _iconAnimation.addListener(() => this.setState(() {}));
     _iconAnimationController.forward();
+  }
+
+  void _tryLogin(BuildContext context) {
+    Navigator.of(context).pushNamed('/clicker');
   }
 
   @override
@@ -88,7 +85,7 @@ class LoginPageState extends State<LoginPage>
                           // child: new Text("Login"),
 
                           splashColor: Colors.redAccent,
-                          onPressed: () => print("login press"),
+                          onPressed: () => this._tryLogin(context),
                         )
                       ],
                     ),
