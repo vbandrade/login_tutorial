@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       home: new LoginPage(),
       theme: new ThemeData(primarySwatch: Colors.amber),
       routes: <String, WidgetBuilder>{
-        '/clicker': (BuildContext context) => new MyHomePage(),
+        '/clicker': (BuildContext context) => new ClickCounter(),
         // '/b': (BuildContext context) => new MyPage(title: 'page B'),
         // '/c': (BuildContext context) => new MyPage(title: 'page C'),
       },

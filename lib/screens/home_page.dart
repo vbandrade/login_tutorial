@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatefulWidget {
+class ClickCounter extends StatefulWidget {
   final String title = "Clicker";
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
-    return new _MyHomePageState();
+    return new ClickCounterState();
   }
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class ClickCounterState extends State<ClickCounter> {
   int _counter = 0;
 
   void _incrementCounter() {
