@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class MyApp extends StatelessWidget {
+class LoginPage extends StatefulWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -8,9 +8,7 @@ class MyApp extends StatelessWidget {
         home: new LoginPage(),
         theme: new ThemeData(primarySwatch: Colors.amber));
   }
-}
 
-class LoginPage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
